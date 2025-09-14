@@ -1,0 +1,250 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Press+Start+2P&family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Jersey+10" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+<title>Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="particles">
+  <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+  <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+  <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+  <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+  <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+  <div class="particle" style="left: 70%; animation-delay: 0.5s;"></div>
+  <div class="particle" style="left: 80%; animation-delay: 1.5s;"></div>
+  <div class="particle" style="left: 90%; animation-delay: 2.5s;"></div>
+</div>
+
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-transparent text-[var(--text-color)] dark group/design-root overflow-x-hidden scanlines">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap px-10 py-4 border-b-4 border-double border-[var(--secondary-color)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-3xl">
+                    stadia_controller
+                </span>
+<h1 class="text-6xl text-white neon-text">PORTFOLIO</h1>
+</div>
+<div class="flex items-center gap-8">
+<nav class="flex gap-8 items-center">
+<a class="text-lg font-bold hover:text-[var(--accent-color)] transition-colors duration-300 hover:neon-text" href="index.html">Portfolio</a>
+<a class="text-lg font-bold hover:text-[var(--accent-color)] transition-colors duration-300 hover:neon-text" href="#about-me">About</a>
+<a class="text-lg font-bold hover:text-[var(--accent-color)] transition-colors duration-300 hover:neon-text" href="mailto:prajeetapal@gmail.com">Contact</a>
+</nav>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[var(--primary-color)] neon-glow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnQv9EXEzKpROZrFTEG9lAlZ1dyys8TkAfSqMdnVemEFZu-P6xRUUj6C2mTipcu8G-SadHUijIl0WUj-s9tCgB0KiPorqhkpFmUCJzsYELT1-E3UOYIc_zAEbO03q7ymRgf240wiNEZ9MZtARQs6DhO_n2BRAXZf7AcMUTv76YK06LROiZMLm2IFzE1VZ60jeaipv1wXmUYDOljdjPf5DAYvwgyALVVlLXacmIf82FdgsZuGlpmIKzzOQ_mtVw0RENbXlRmomRurw");'></div>
+</div>
+</header>
+<main class="px-20 flex flex-1 justify-center py-10 relative z-10">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 gap-12">
+<div class="@container rounded-lg p-6">
+
+  <!-- Banner -->
+<div class="w-full relative flex flex-col justify-end min-h-[300px] rounded-sm overflow-hidden">
+  <!-- Background Image -->
+  <img src="images/banner2.png" class="w-full h-full object-cover" alt="Banner Image">
+  <!-- Gradient overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-t from-[#0d0714] via-transparent to-transparent"></div>
+  <div class="flex flex-row items-center justify-center gap-x-6 pt-2">
+    <button class="font-jersey10 text-sm bg-[var(--retro-green)] text-black py-1.5 px-3 rounded-sm retro-btn retro-shadow" onclick="scrollToCarousel()">
+  <span class="flex items-center gap-1">
+    <span class="material-symbols-outlined text-sm">play_arrow</span>
+    Play
+  </span>
+</button>
+
+
+    <h2 class="text-3xl font-pixel text-white glitch retro-shadow"></h2>
+  </div>
+</div>
+</div>
+<!-- About Section -->
+<section id="abput-me" class="flex flex-col items-center px-20 py-10 text-white font-pixel text-sm text-center">
+  <h2 class="text-7xl mb-4 neon-text">ABOUT ME</h2>
+  <p class="max-w-3xl leading-relaxed">
+    I'm a CS grad at Manipal, with a passion for storytelling through visuals. I create posters, animations, and immersive visual experiences that balance creativity with thoughtful design. I've worked as a graphic designer for @WeCreateProblems and @BrandWardens. I love crafting work that’s both functional and visually engaging, always chasing the "how" and "why" until the design clicks.
+  </p>
+</section>
+
+
+<div class="carousel-container overflow-hidden relative animated-border rounded-lg p-4">
+<h2 class="text-7xl font-pixel text-white px-4 pb-6 text-center retro-shadow neon-text">FEATURED</h2>
+<div class="flex animate-carousel">
+<div class="flex items-stretch p-4 gap-6 flex-shrink-0 w-full">
+<!-- Placeholder for local images -->
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/seedhe maut poster final.png')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/seedhe maut poster final.png');"></div>
+
+  <!-- Text Info -->
+  <div class="p-4 pt-0">
+    <p class="text-xl font-bold leading-normal text-white retro-shadow">Seedhe Maut Poster</p>
+    <p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Exploring Retro-Indian design mix for the new generation.</p>
+  </div>
+</div>
+
+
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/weeknd3.png')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/weeknd3.png');"></div>
+
+<div class="p-4 pt-0">
+<p class="text-xl font-bold leading-normal text-white retro-shadow">Weeknd Poster</p>
+<p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Brutalism inspired poster.</p>
+</div>
+</div>
+
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/cosmos.png')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/cosmos.png');"></div>
+
+<div class="p-4 pt-0">
+<p class="text-xl font-bold leading-normal text-white retro-shadow">Cosmos Poster</p>
+<p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Fashion-show poster for university fest.</p>
+</div>
+</div>
+</div>
+
+<!-- Second set of carousel items -->
+<div class="flex items-stretch p-4 gap-6 flex-shrink-0 w-full">
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/talwiinder.jpg')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/talwiinder.jpg');"></div>
+
+<div class="p-4 pt-0">
+<p class="text-xl font-bold leading-normal text-white retro-shadow">Talwiinder Poster</p>
+<p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Old film themed poster.</p>
+</div>
+</div>
+
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/kendrick.jpg')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/kendrick.jpg');"></div>
+
+<div class="p-4 pt-0">
+<p class="text-xl font-bold leading-normal text-white retro-shadow">Kendrick Poster</p>
+<p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Magazine cover themed design.</p>
+</div>
+</div>
+
+<div class="flex-1 snap-center flex h-full flex-col gap-4 rounded-sm min-w-0 pixel-border pixel-border-hover transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onclick="openOverlay('images/jordans.png')">
+  <!-- Image -->
+  <div class="w-full aspect-video bg-center bg-no-repeat bg-cover" style="background-image: url('images/jordans.png');"></div>
+
+<div class="p-4 pt-0">
+<p class="text-xl font-bold leading-normal text-white retro-shadow">Jordans Advert.</p>
+<p class="text-[#ad90cb] text-sm font-normal leading-normal retro-shadow">Advert poster for Nike Jordans.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="rounded-lg p-6">
+<div class="relative flex flex-col items-center">
+  <!-- GIF -->
+    <img src="images/download.gif" alt="Jumping Character" class="w-16 h-16 mb-[-1rem]">
+  <!-- Heading as the "platform" -->
+  <h2 class="text-7xl font-pixel text-white px-4 pb-6 text-center retro-shadow neon-text">
+    RECENT PROJECTS
+  </h2>
+</div>
+
+<div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 p-4">
+
+  <!-- Project Grid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 p-4">
+
+  <!-- Project 1 "Folder Preview" -->
+  <div class="flex flex-col gap-3 group animated-border rounded-lg p-4 hover:neon-glow transition-all duration-300 cursor-pointer"
+       onclick="openFolderOverlay('project1')">
+    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-sm border-2 border-transparent group-hover:border-[var(--retro-green)] transition-all duration-300"
+         style='background-image: url("images/coffee.png");'></div>
+    <div>
+      <p class="text-lg font-bold leading-normal text-white retro-shadow">Brew House Identity</p>
+      <p class="text-white text-sm font-normal leading-normal retro-shadow">Crafting a warm, modern coffee brand with bold personality.</p>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="flex flex-col gap-3 group animated-border rounded-lg p-4 hover:neon-glow transition-all duration-300 cursor-pointer"
+       onclick="openFolderOverlay('project2')">
+    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-sm border-2 border-transparent group-hover:border-[var(--retro-green)] transition-all duration-300"
+         style='background-image: url("images/broken\ heart\ zine.png");'></div>
+    <div>
+      <p class="text-lg font-bold leading-normal text-white retro-shadow">Zine Tales</p>
+      <p class="text-white text-sm font-normal leading-normal retro-shadow">Printable funny heartbreaks, doodles, and zines.</p>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="flex flex-col gap-3 group animated-border rounded-lg p-4 hover:neon-glow transition-all duration-300 cursor-pointer"
+       onclick="openFolderOverlay('project3')">
+    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-sm border-2 border-transparent group-hover:border-[var(--retro-green)] transition-all duration-300"
+         style='background-image: url("images/speaker-talk.png");'></div>
+    <div>
+      <p class="text-lg font-bold leading-normal text-white retro-shadow">Speaker Spotlight</p>
+      <p class="text-white text-sm font-normal leading-normal retro-shadow">Instagram visuals for speaker talk event by Elevate.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Overlay / Folder Modal -->
+<div id="folderOverlay" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex flex-col items-center justify-center overflow-y-auto p-4">
+  <button class="absolute top-4 right-4 text-white text-2xl font-bold" onclick="closeFolderOverlay()">✖</button>
+  <h2 id="folderTitle" class="text-3xl font-pixel text-white retro-shadow mb-6">Folder Name</h2>
+  <div id="folderImages" class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 w-full max-w-[1200px]">
+    <!-- Images will be dynamically added here -->
+  </div>
+</div>
+
+
+</div>
+
+</div>
+
+<!-- Score/Stats Section -->
+<div class="rounded-lg p-6 text-center">
+<h3 class="text-6xl font-pixel text-white mb-6 retro-shadow neon-text">GAME STATS</h3>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+  <div class="neon-glow rounded p-4 bg-[var(--secondary-color)]">
+    <div class="text-5xl font-pixel text-[var(--retro-green)] retro-shadow">50+</div>
+    <div class="text-sm font-pixel text-white mt-2">PROJECTS</div>
+  </div>
+  <div class="neon-glow rounded p-4 bg-[var(--secondary-color)]">
+    <div class="text-5xl font-pixel text-[var(--retro-green)] retro-shadow">5K+</div>
+    <div class="text-sm font-pixel text-white mt-2">PLAYERS</div>
+  </div>
+  <div class="neon-glow rounded p-4 bg-[var(--secondary-color)]">
+    <div class="text-5xl font-pixel text-[var(--retro-green)] retro-shadow">85%</div>
+    <div class="text-sm font-pixel text-white mt-2">UPTIME</div>
+  </div>
+  <div class="neon-glow rounded p-4 bg-[var(--secondary-color)]">
+    <div class="text-5xl font-pixel text-[var(--retro-green)] retro-shadow">24/7</div>
+    <div class="text-sm font-pixel text-white mt-2">SUPPORT</div>
+  </div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+<!-- Image Overlay with dynamic sizing -->
+<div id="imageOverlay" class="image-overlay" onclick="closeOverlay()">
+<div class="overlay-content" onclick="event.stopPropagation()">
+<button class="close-btn" onclick="closeOverlay()">CLOSE</button>
+<img id="overlayImage" class="overlay-image" src="" alt="Project Preview">
+<div id="imageInfo" class="absolute bottom-[-40px] left-0 right-0 text-center text-[var(--retro-green)] font-pixel text-xs"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</div>
+</body></html>
